@@ -1,0 +1,129 @@
+
+header {
+    background-color: #333333;
+    height: 100px;
+    text-align: center;
+    color: #faf5f5;
+}
+
+body {
+    background-image: url(../imagens/fundo-5.jpg);
+   
+}
+
+* { margin: 0; padding: 0;}
+
+/*REDE SOCIAL INTERATICA INICIO*/
+section{
+    margin: 10px auto;
+    width: 1200px;
+    height: 90px;
+}
+
+.rede {
+    width: 60px;
+    height: 60px;
+    float: right;
+    margin-left: 30px;
+    transition: all 0.4s ease-out;
+    border-radius: 50%;
+    
+}
+
+.rede#facebook{
+    background-color: #2372a3;
+}
+
+.rede#twitter{
+    background-color: #0084b4;
+}
+
+.rede#instagram {
+    background-color: #3f729b;
+}
+
+.rede#snap {
+    background-color: #fc0;
+}
+
+.rede#plus{
+    background-color: #dd4b39;
+}
+
+.rede#youtube {
+    background-color: #b00;
+}
+
+.icone {
+    padding: 3px;
+    width: 34px;
+    height: auto;
+    position: absolute;     
+    margin-right: 5px;
+    transform: translate(20%, 20%, 15%);
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+/*REDE SOCIAL FINAL*/
+
+
+/*MENU DO SITE: INICIO*/
+.menu { width: 100%; height: 50px; background-color: #222; font-family: 'Arial';}
+
+.menu ul {list-style: none; position: relative;}
+
+.menu ul li {width: 150px; float: left;}
+
+.menu a { padding: 15px; display: block; text-decoration: none; text-align: center; background-color: #222; color: #ffffff; }
+
+.menu ul ul { position: absolute; visibility: hidden;}
+
+
+.menu ul li:hover ul {visibility: visible;}
+
+
+.menu a:hover {background-color: #f1000c;}
+
+.menu ul ul li{ float: none; border-bottom: 1px solid #ccc;}
+
+.menu ul ul li a { background-color: rgb(54, 50, 50)}
+
+
+label[for="bt_menu"]{ padding: 5px; background-color: #222; color: #fff; font-family:"Arial"; text-align: center;font-size: 30px;cursor: pointer; width: 50px; height: 50px;}
+
+#bt_menu {display: none;}
+
+label[for="bt_menu"]{display: none;}
+
+@media( max-widht: 800px){
+    label[for="bt_menu"]{ display: block;}
+
+    #bt_menu:checked ~ .menu{
+         margin-inline-start: 0;
+    } 
+    .menu ul li { width: 100%; float: none;}
+
+    .menu {
+         margin-top: 5px;
+         margin-left: -100%;
+         transition: all .4s;
+    }
+    .menu ul ul {
+        position: static;
+        overflow: hidden;
+        max-height: 0;
+        transition: all .4s;
+    }
+
+    .menu ul li:hover ul{
+        height: auto;
+        max-height: 200px;
+    }
+    .menu{
+        display: block;
+        margin: auto;
+    }
+}
+/*MENU DO SITE: FINAL*/
+    
