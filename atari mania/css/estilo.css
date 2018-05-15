@@ -8,6 +8,7 @@ header {
 
 body {
     background-image: url(../imagens/fundo-5.jpg);
+    font-family: 'Arial';
    
 }
 
@@ -23,7 +24,8 @@ section{
 .rede {
     width: 60px;
     height: 60px;
-    float: right;
+    text-align: left;
+    display: inline-block;
     margin-left: 30px;
     transition: all 0.4s ease-out;
     border-radius: 50%;
@@ -69,7 +71,7 @@ section{
 
 
 /*MENU DO SITE: INICIO*/
-.menu { width: 100%; height: 50px; background-color: #222; font-family: 'Arial';}
+.menu { width: 100%; height: 50px; background-color: #222; }
 
 .menu ul {list-style: none; position: relative;}
 
@@ -95,6 +97,13 @@ label[for="bt_menu"]{ padding: 5px; background-color: #222; color: #fff; font-fa
 #bt_menu {display: none;}
 
 label[for="bt_menu"]{display: none;}
+
+.footer-theme{
+    background-color: rgba(0,0,0, .5);
+    width: 100%;
+    height: 65px;
+    text-align: right;
+}
 
 @media( max-widht: 800px){
     label[for="bt_menu"]{ display: block;}
