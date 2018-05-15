@@ -15,10 +15,49 @@ body {
 * { margin: 0; padding: 0;}
 
 /*REDE SOCIAL INTERATICA INICIO*/
-section{
+.container{
     margin: 10px auto;
     width: 1200px;
     height: 90px;
+}
+
+/*MENU DO SITE: INICIO*/
+.menu { width: 100%; height: 50px; background-color: #222; }
+
+.menu ul {list-style: none; position: relative;}
+
+.menu ul li {width: 150px; float: left;}
+
+.menu a { padding: 15px; display: block; text-decoration: none; text-align: center; background-color: #222; color: #ffffff; }
+
+.sub-menu{ position: absolute; display: none;}
+
+.sub-menu-principal{ position: absolute; display: none;}
+
+
+.menu ul li:hover .sub-menu-principal {display: block}
+
+.sub-menu-principal li:hover .sub-menu{
+    display: inline-block;
+}
+
+
+.menu a:hover {background-color: #f1000c;}
+
+.menu ul ul li{ float: none; border-bottom: 1px solid #ccc;}
+
+.menu ul ul li a { background-color: rgb(54, 50, 50)}
+
+
+label[for="bt_menu"]{ padding: 5px; background-color: #222; color: #fff; font-family:"Arial"; text-align: center;font-size: 30px;cursor: pointer; width: 50px; height: 50px;}
+
+#bt_menu {display: none;}
+
+label[for="bt_menu"]{display: none;}
+
+#teste{
+    background-color: rgba(255, 255, 255, .6);
+
 }
 
 .rede {
@@ -68,35 +107,6 @@ section{
     margin-left: 10px;
 }
 /*REDE SOCIAL FINAL*/
-
-
-/*MENU DO SITE: INICIO*/
-.menu { width: 100%; height: 50px; background-color: #222; }
-
-.menu ul {list-style: none; position: relative;}
-
-.menu ul li {width: 150px; float: left;}
-
-.menu a { padding: 15px; display: block; text-decoration: none; text-align: center; background-color: #222; color: #ffffff; }
-
-.menu ul ul { position: absolute; visibility: hidden;}
-
-
-.menu ul li:hover ul {visibility: visible;}
-
-
-.menu a:hover {background-color: #f1000c;}
-
-.menu ul ul li{ float: none; border-bottom: 1px solid #ccc;}
-
-.menu ul ul li a { background-color: rgb(54, 50, 50)}
-
-
-label[for="bt_menu"]{ padding: 5px; background-color: #222; color: #fff; font-family:"Arial"; text-align: center;font-size: 30px;cursor: pointer; width: 50px; height: 50px;}
-
-#bt_menu {display: none;}
-
-label[for="bt_menu"]{display: none;}
 
 .footer-theme{
     background-color: rgba(0,0,0, .5);

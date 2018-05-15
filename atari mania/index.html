@@ -2,39 +2,43 @@
 <html lang="pt-br">
 <head>
 
-<title>Atari Mania</title>
-<meta charset="utf-8">
-<link rel="stylesheet"  type:"text/css" href="css/estilo.css">
+    <title>Atari Mania</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet"  type:"text/css" href="css/estilo.css">
 
 </head>
 <body>
-    
- <input type="checkbox" id="bt_menu">
- <label for="bt_menu">&#9776;</label>   
-<header>
+
+   <input type="checkbox" id="bt_menu">
+   <label for="bt_menu">&#9776;</label>   
+   <header>
     <h1>Atari Mania</h1>
-   
+
     
 </header>    
 
 
 <nav class="menu">
-    
+
     <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Tecnologia</a>
-            <ul>
+            <ul class="sub-menu-principal">
                 <li><a href="#">Apple</a>
-                    <ul>
-                        <li><a href="#">Celulares</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">Celulares</a>
                         </li>
-                        <li><a href="#">Computadores</a>
+                        <li>
+                            <a href="#">Computadores</a>
                         </li>
-                        <li><a href="#">Outras Tecnologias</a></li>
+                        <li>
+                            <a href="#">Outras Tecnologias</a>
+                        </li>
                     </ul>
                 </li>
                 <li><a href="#">Microsoft</a>
-                    <ul>
+                    <ul class="sub-menu">
                         <li><a href="#">Computadores</a>
                         </li>
                         <li><a href="#">Celulares</a>
@@ -43,7 +47,7 @@
                     </ul>
                 </li>
                 <li><a href="#">Samsung</a>
-                    <ul>
+                    <ul class="sub-menu">
                         <li><a href="#">Computadores</a>
                         </li>
                         <li><a href="#">Celulares</a>
@@ -52,7 +56,7 @@
                     </ul>
                 </li>
                 <li><a href="#">LG</a>
-                    <ul>
+                    <ul class="sub-menu">
                         <li><a href="#">Computadores</a>
                         </li>
                         <li><a href="#">Celulares</a>
@@ -65,14 +69,14 @@
             </ul>
         </li>
         <li><a href="#">Series</a>
-            <ul>
+            <ul class="sub-menu">
                 <li><a href="#">Novidade</a>
                 </li>
                 <li><a href="#">Noticias</a></li>
             </ul>
         </li>
         <li><a href="#">Jogos</a>
-            <ul>
+            <ul class="sub-menu">
                 <li><a href="#">Xbox</a>
                 </li>
                 <li><a href="#">Nintendo</a>
@@ -82,43 +86,45 @@
             </ul>
         </li>
         <li><a href="#">Filmes</a>
-            <ul>
+            <ul class="sub-menu">
                 <li><a href="#">Novidades</a></li>
             </ul>
         </li>
     </ul>
-   
+
 </nav>
 
 
 
 <main>
     <section id="teste">
-        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit est laudantium dicta iure dolorem, quasi ad amet ipsum distinctio repudiandae temporibus expedita facere ducimus iusto perspiciatis. Possimus sequi assumenda at.</h1>
+        <div class="container">
+            <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit est laudantium dicta iure dolorem, quasi ad amet ipsum distinctio repudiandae temporibus expedita facere ducimus iusto perspiciatis. Possimus sequi assumenda at.</h1>
+        </div>
     </section>
 </main>
 
 <footer>  
     <div class="footer-theme">
 
-                    <div class="rede" id="facebook">
-                        <img class="icone" src="imagens/facebook.png"/>
-                    </div>
-                    <div class="rede" id="twitter">
-                        <img class="icone" src="imagens/twitter.png"/>
-                    </div>
-                    <div class="rede" id="instagram">
-                        <img class="icone" src="imagens/instagram.png"/>
-                    </div>
-                    <div class="rede" id="snap">
-                        <img  class="icone" src="imagens/snap.png"/>
-                    </div>
-                    <div class="rede" id="plus">
-                        <img class="icone" src="imagens/plus.png"/>
-                    </div>
-                    <div class="rede" id="youtube">
-                        <img class="icone" src="imagens/youtube.png"/>
-                    </div> 
+        <div class="rede" id="facebook">
+            <img class="icone" src="imagens/facebook.png"/>
+        </div>
+        <div class="rede" id="twitter">
+            <img class="icone" src="imagens/twitter.png"/>
+        </div>
+        <div class="rede" id="instagram">
+            <img class="icone" src="imagens/instagram.png"/>
+        </div>
+        <div class="rede" id="snap">
+            <img  class="icone" src="imagens/snap.png"/>
+        </div>
+        <div class="rede" id="plus">
+            <img class="icone" src="imagens/plus.png"/>
+        </div>
+        <div class="rede" id="youtube">
+            <img class="icone" src="imagens/youtube.png"/>
+        </div> 
     </div>  
     
 </footer>    
